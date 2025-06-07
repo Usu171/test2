@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     owner = "dirac";
     repo = "dirac";
     rev = "v25.0";
-    sha256 = "9da725ab0fe80b3a17b7ba2e631cf24efc3e1eb870a44a4049c664303b9b66c7";
+    sha256 = "544c81a1b4af30cf99d7de0a2b24600698e3b2df7ee4bc5b963ead9ce3f92a6d";
     fetchSubmodules = true;
   };
 
