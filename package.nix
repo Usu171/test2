@@ -10,7 +10,6 @@
 , mpi
 , hdf5
 , pkg-config
-, pcmsolver
 , blas
 , lapack
 }:
@@ -52,7 +51,6 @@ stdenv.mkDerivation rec {
     gfortran
     mpi
     hdf5
-    pcmsolver
     blas
     lapack
   ];
@@ -74,8 +72,6 @@ stdenv.mkDerivation rec {
     mkdir -p build
     cd build
     cmake .. \
-      -DENABLE_PCMSOLVER=ON \
-      -DPCMSOLVER_ROOT=${pcmsolver} \
       -DENABLE_EXATENSOR=OFF\
       -DPYTHON_INTERPRETER=${pythonWithH5py}/bin/python
   '';
